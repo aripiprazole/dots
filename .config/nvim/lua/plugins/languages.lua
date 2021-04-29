@@ -1,6 +1,25 @@
 local lspconfig = require('lspconfig')
 local capabilities = vim.lsp.protocol.make_client_capabilities()
-local servers = {'rust_analyzer', 'tsserver', 'bashls', 'kotlin_language_server'}
+local servers = {
+  'rust_analyzer',
+  'tsserver',
+  'bashls',
+  'jsonls',
+  'kotlin_language_server',
+  'hls',
+  'graphql',
+  'ocamllsp',
+  'cssls',
+  'stylelint_lsp',
+  'vimls',
+  'html',
+  'vuels',
+  'svelte',
+  'clangd',
+  'cmake',
+  'flow',
+  'clojure_lsp'
+}
 
 local function on_attach(client, buf)
   local function buf_set_keymap(...) vim.api.nvim_buf_set_keymap(buf, ...) end

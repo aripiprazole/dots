@@ -12,7 +12,7 @@ return require('packer').startup(function()
   use 'norcalli/nvim-base16.lua'
   use 'folke/lsp-colors.nvim'
 
-  -- lsp stuff
+  -- completion   stuff
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-compe'
   use 'onsails/lspkind-nvim'
@@ -26,6 +26,7 @@ return require('packer').startup(function()
   use 'lukas-reineke/indent-blankline.nvim'
   use 'kyazdani42/nvim-tree.lua'
   use 'karb94/neoscroll.nvim'
+  use 'wakatime/vim-wakatime'
 
   -- git
   use {

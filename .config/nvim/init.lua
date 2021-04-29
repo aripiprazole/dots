@@ -42,16 +42,16 @@ g.indentLine_char = '▏'
 g.indent_blankline_char = "▏"
 g.indent_blankline_indent_level = 15
 
-require 'plugins'
-require 'completion'
-require 'theme'
-require 'code-actions'
-require 'languages'
-require 'tree'
-require 'keymaps'
-require 'tabs'
-require 'statusline'
-require 'git'
+require 'plugins.plugins'
+require 'plugins.completion'
+require 'plugins.theme'
+require 'plugins.code-actions'
+require 'plugins.languages'
+require 'plugins.tree'
+require 'plugins.keymaps'
+require 'plugins.tabs'
+require 'plugins.statusline'
+require 'plugins.git'
 
 require('neoscroll').setup()
 require('telescope').load_extension('media_files')
@@ -64,5 +64,5 @@ require('symbols-outline').setup {
 cmd 'hi NonText guifg=bg'
 
 -- decrease buffer border width
-cmd 'set fillchars+=vert:\\|'
+cmd 'set fillchars+=vert:\\▕'
 cmd 'hi vertsplit guifg=fg guibg=bg'

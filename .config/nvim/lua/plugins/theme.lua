@@ -1,5 +1,5 @@
 local base16 = require 'base16'
-base16(base16.themes['onedark'], true)
+base16(base16.themes['twilight'], true)
 
 require("lsp-colors").setup({
   Error = "#db4b4b",
