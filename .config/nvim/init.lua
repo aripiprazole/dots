@@ -11,6 +11,7 @@ g.auto_save = 0
 
 cmd 'syntax enable'
 cmd 'syntax on'
+cmd 'filetype plugin on'
 
 cmd 'autocmd BufWritePost plugins.lua PackerCompile'
 
@@ -52,6 +53,9 @@ require 'plugins.keymaps'
 require 'plugins.tabs'
 require 'plugins.statusline'
 require 'plugins.git'
+require 'plugins.format'
+
+vim.fn['glaive#Install']()
 
 require('neoscroll').setup()
 require('telescope').load_extension('media_files')

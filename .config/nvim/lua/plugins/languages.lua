@@ -68,7 +68,7 @@ end
 
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup {
-    capabilities = capabilities;
-    on_attach = on_attach;
+    capabilities = capabilities,
+    on_attach = on_attach,
   }
 end

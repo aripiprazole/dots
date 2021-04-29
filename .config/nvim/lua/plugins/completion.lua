@@ -45,6 +45,7 @@ require('compe').setup {
   documentation = true;
 
   source = {
+    tabnine = true;
     path = true;
     buffer = true;
     calc = true;
@@ -94,6 +95,12 @@ _G.s_tab_complete = function()
     return t "<S-Tab>"
   end
 end
+
+vim.api.nvim_set_keymap("i", "<C-Space>", "compe#complete()", {noremap=true, expr=true, silent=true})
+vim.api.nvim_set_keymap("i", "<CR>", "compe#confirm('<CR>')", {noremap=true, expr=true, silent=true})
+vim.api.nvim_set_keymap("i", "<C-e>", "compe#close('<C-e>')", {noremap=true, expr=true, silent=true})
+vim.api.nvim_set_keymap("i", "<C-f>", "compe#scroll({ 'delta': +4 })", {noremap=true, expr=true, silent=true})
+vim.api.nvim_set_keymap("i", "<C-d>", "compe#scroll({ 'delta': -4 })", {noremap=true, expr=true, silent=true})
 
 vim.api.nvim_set_keymap("i", "<Tab>", "v:lua.tab_complete()", {expr = true})
 vim.api.nvim_set_keymap("s", "<Tab>", "v:lua.tab_complete()", {expr = true})

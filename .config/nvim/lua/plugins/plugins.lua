@@ -12,21 +12,32 @@ return require('packer').startup(function()
   use 'norcalli/nvim-base16.lua'
   use 'folke/lsp-colors.nvim'
 
-  -- completion   stuff
+  -- completion stuff
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-compe'
   use 'onsails/lspkind-nvim'
   use 'hrsh7th/vim-vsnip'
+  use {
+    'tzachar/compe-tabnine',
+    run='./install.sh',
+    requires='hrsh7th/nvim-compe'
+  }
 
   -- code actions
   use 'RishabhRD/popfix'
   use 'RishabhRD/nvim-lsputils'
+
+  -- format
+  use 'google/vim-maktaba'
+  use 'google/vim-codefmt'
+  use 'google/vim-glaive'
 
   -- misc
   use 'lukas-reineke/indent-blankline.nvim'
   use 'kyazdani42/nvim-tree.lua'
   use 'karb94/neoscroll.nvim'
   use 'wakatime/vim-wakatime'
+  use 'preservim/nerdcommenter'
 
   -- git
   use {
