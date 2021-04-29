@@ -23,6 +23,13 @@ return require('packer').startup(function()
     requires='hrsh7th/nvim-compe'
   }
 
+  -- code runner
+  use {
+    'michaelb/sniprun',
+    run='./install.sh'
+  }
+  use 'puremourning/vimspector'
+
   -- code actions
   use 'RishabhRD/popfix'
   use 'RishabhRD/nvim-lsputils'

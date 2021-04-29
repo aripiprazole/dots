@@ -54,6 +54,8 @@ require 'plugins.tabs'
 require 'plugins.statusline'
 require 'plugins.git'
 require 'plugins.format'
+require 'plugins.debugger'
+require 'plugins.commands'
 
 vim.fn['glaive#Install']()
 

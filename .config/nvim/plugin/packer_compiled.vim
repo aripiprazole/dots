@@ -156,6 +156,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
+  sniprun = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/sniprun"
+  },
   ["symbols-outline.nvim"] = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/symbols-outline.nvim"
@@ -167,6 +171,18 @@ _G.packer_plugins = {
   ["telescope.nvim"] = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+  },
+  ["vim-codefmt"] = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-codefmt"
+  },
+  ["vim-glaive"] = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-glaive"
+  },
+  ["vim-maktaba"] = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-maktaba"
   },
   ["vim-surround"] = {
     loaded = true,

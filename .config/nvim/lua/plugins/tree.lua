@@ -38,6 +38,3 @@ g.nvim_tree_width_allow_resize = 1
 g.nvim_tree_lsp_diagnostics = 1
 g.nvim_tree_special_files = {'README.md', 'Makefile', 'MAKEFILE'}
 
-vim.api.nvim_set_keymap('n', '<C-n>', '<cmd>NvimTreeToggle<CR>', {noremap=true})
-vim.api.nvim_set_keymap('n', '<leader>r', '<cmd>NvimTreeRefresh<CR>', {noremap=true})
-vim.api.nvim_set_keymap('n', '<leader>n', '<cmd>NvimTreeFindFile<CR>', {noremap=true})
