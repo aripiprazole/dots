@@ -23,6 +23,16 @@ cmd 'set noshowmode'
 cmd 'set foldcolumn=0'
 cmd 'set showtabline=1'
 
+-- setup merlin and ocaml
+cmd [[
+  if executable('opam')
+    let g:opamshare=substitute(system('opam config var share'),'\n$','','''')
+    if isdirectory(g:opamshare."/merlin/vim")
+      execute "set rtp+=" . g:opamshare."/merlin/vim"
+    endif
+  endif
+]]
+
 g.indentLine_enabled = 1
 g.indent_blankline_char = "▏"
 

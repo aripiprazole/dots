@@ -11,6 +11,9 @@ return require('packer').startup(function()
   use 'nvim-treesitter/nvim-treesitter'
   use 'norcalli/nvim-base16.lua'
   use 'folke/lsp-colors.nvim'
+  
+  -- rich presence
+  use 'vimsence/vimsence'
 
   -- completion stuff
   use 'neovim/nvim-lspconfig'
@@ -22,6 +25,7 @@ return require('packer').startup(function()
     run='./install.sh',
     requires='hrsh7th/nvim-compe'
   }
+  use 'fleischie/vim-styled-components'
 
   -- code runner
   use {

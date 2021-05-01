@@ -184,6 +184,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-maktaba"
   },
+  ["vim-styled-components"] = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-styled-components"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-surround"
@@ -195,6 +199,10 @@ _G.packer_plugins = {
   ["vim-wakatime"] = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-wakatime"
+  },
+  vimspector = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vimspector"
   }
 }
 
