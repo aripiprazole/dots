@@ -1,6 +1,9 @@
 vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function()
+  -- let packer install packer
+  use 'wbthomason/packer.nvim'
+
   -- auto close stuff
   use 'jiangmiao/auto-pairs'
   use 'tpope/vim-surround'
@@ -14,6 +17,10 @@ return require('packer').startup(function()
   
   -- rich presence
   use 'vimsence/vimsence'
+
+  -- language stuff
+  use 'neovimhaskell/haskell-vim'
+  use 'derekelkins/agda-vim'
 
   -- completion stuff
   use 'neovim/nvim-lspconfig'
@@ -49,6 +56,8 @@ return require('packer').startup(function()
   use 'karb94/neoscroll.nvim'
   use 'wakatime/vim-wakatime'
   use 'preservim/nerdcommenter'
+  use 'chaoren/vim-wordmotion'
+  use 'abdalrahman-ali/vim-remembers'
 
   -- git
   use {
