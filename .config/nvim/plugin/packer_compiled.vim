@@ -200,6 +200,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-remembers"
   },
+  ["vim-rescript"] = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-rescript"
+  },
   ["vim-styled-components"] = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-styled-components"
@@ -207,10 +211,6 @@ _G.packer_plugins = {
   ["vim-surround"] = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-surround"
-  },
-  ["vim-transparent"] = {
-    loaded = true,
-    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-transparent"
   },
   ["vim-vsnip"] = {
     loaded = true,

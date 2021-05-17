@@ -20,7 +20,9 @@ return require('packer').startup(function()
 
   -- language stuff
   use 'neovimhaskell/haskell-vim'
+  use 'idris-hackers/idris-vim'
   use 'derekelkins/agda-vim'
+  use 'rescript-lang/vim-rescript'
 
   -- completion stuff
   use 'neovim/nvim-lspconfig'
