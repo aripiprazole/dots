@@ -12,8 +12,12 @@ return require('packer').startup(function()
   -- ricing stuff
   use 'kyazdani42/nvim-web-devicons'
   use 'nvim-treesitter/nvim-treesitter'
-  use 'norcalli/nvim-base16.lua'
   use 'folke/lsp-colors.nvim'
+
+  -- themes
+  use 'hachy/eva01.vim'
+  use 'arzg/vim-colors-xcode'
+  use 'eemed/sitruuna.vim'
   
   -- rich presence
   use 'vimsence/vimsence'

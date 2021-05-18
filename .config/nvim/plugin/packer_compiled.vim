@@ -95,6 +95,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/haskell-vim"
   },
+  ["idris-vim"] = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/idris-vim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim"
