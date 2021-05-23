@@ -27,6 +27,8 @@ return require('packer').startup(function()
   use 'idris-hackers/idris-vim'
   use 'derekelkins/agda-vim'
   use 'rescript-lang/vim-rescript'
+  use 'rhysd/vim-llvm'
+  use 'Nymphium/vim-koka'
 
   -- completion stuff
   use 'neovim/nvim-lspconfig'

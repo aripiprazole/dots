@@ -83,6 +83,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/compe-tabnine"
   },
+  ["eva01.vim"] = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/eva01.vim"
+  },
   ["galaxyline.nvim"] = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
@@ -123,10 +127,6 @@ _G.packer_plugins = {
   nerdcommenter = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/nerdcommenter"
-  },
-  ["nvim-base16.lua"] = {
-    loaded = true,
-    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/nvim-base16.lua"
   },
   ["nvim-bufferline.lua"] = {
     loaded = true,
@@ -172,6 +172,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/popup.nvim"
   },
+  ["sitruuna.vim"] = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/sitruuna.vim"
+  },
   sniprun = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/sniprun"
@@ -192,9 +196,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-codefmt"
   },
+  ["vim-colors-xcode"] = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-colors-xcode"
+  },
   ["vim-glaive"] = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-glaive"
+  },
+  ["vim-llvm"] = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-llvm"
   },
   ["vim-maktaba"] = {
     loaded = true,
