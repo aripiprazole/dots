@@ -204,6 +204,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-glaive"
   },
+  ["vim-koka"] = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-koka"
+  },
   ["vim-llvm"] = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-llvm"
@@ -219,6 +223,10 @@ _G.packer_plugins = {
   ["vim-rescript"] = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-rescript"
+  },
+  ["vim-startify"] = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-startify"
   },
   ["vim-styled-components"] = {
     loaded = true,

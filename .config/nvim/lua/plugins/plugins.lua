@@ -65,7 +65,7 @@ return require('packer').startup(function()
   use 'wakatime/vim-wakatime'
   use 'preservim/nerdcommenter'
   use 'chaoren/vim-wordmotion'
-  use 'abdalrahman-ali/vim-remembers'
+  use 'mhinz/vim-startify'
 
   -- git
   use {
