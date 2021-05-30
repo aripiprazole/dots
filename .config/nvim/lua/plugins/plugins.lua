@@ -29,6 +29,9 @@ return require('packer').startup(function()
   use 'rescript-lang/vim-rescript'
   use 'rhysd/vim-llvm'
   use 'Nymphium/vim-koka'
+  use 'jaawerth/fennel-nvim'
+  use 'Olical/conjure'
+  use 'Olical/aniseed'
 
   -- completion stuff
   use 'neovim/nvim-lspconfig'

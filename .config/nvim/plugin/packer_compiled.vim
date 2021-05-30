@@ -83,9 +83,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/compe-tabnine"
   },
+  conjure = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/conjure"
+  },
   ["eva01.vim"] = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/eva01.vim"
+  },
+  ["fennel-nvim"] = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/fennel-nvim"
   },
   ["galaxyline.nvim"] = {
     loaded = true,
@@ -215,10 +223,6 @@ _G.packer_plugins = {
   ["vim-maktaba"] = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-maktaba"
-  },
-  ["vim-remembers"] = {
-    loaded = true,
-    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/vim-remembers"
   },
   ["vim-rescript"] = {
     loaded = true,
