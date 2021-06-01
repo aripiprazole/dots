@@ -82,3 +82,6 @@ cmd 'hi NonText guifg=bg'
 -- decrease buffer border width
 cmd 'set fillchars+=vert:\\▕'
 cmd 'hi vertsplit guifg=fg guibg=bg'
+
+-- fix relative numbers
+cmd 'au TermOpen * setlocal nonumber norelativenumber'
