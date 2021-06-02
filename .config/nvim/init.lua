@@ -86,6 +86,6 @@ cmd 'hi vertsplit guifg=fg guibg=bg'
 -- fix relative numbers
 cmd 'au TermOpen * setlocal nonumber norelativenumber'
 
-cmd 'autocmd BufNewFile,BufRead .babelrc set syntax=json'
-cmd 'autocmd BufNewFile,BufRead .eslintrc set syntax=js'
-cmd 'autocmd BufNewFile,BufRead .prettierrc set syntax=json'
+cmd 'autocmd BufNewFile,BufRead .babelrc set filetype=json'
+cmd 'autocmd BufNewFile,BufRead .eslintrc set filetype=javascript'
+cmd 'autocmd BufNewFile,BufRead .prettierrc set filetype=json'
