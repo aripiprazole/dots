@@ -11,6 +11,6 @@ cmd [[
     autocmd FileType java AutoFormatBuffer google-java-format
     autocmd FileType python AutoFormatBuffer yapf
     autocmd FileType rust AutoFormatBuffer rustfmt
-    autocmd FileType vue,javascript,typescript,typescriptreact,javascriptreact AutoFormatBuffer prettier
+    autocmd FileType vue,javascript,typescript,typescriptreact,javascriptreact,json AutoFormatBuffer prettier
   augroup END
 ]]
