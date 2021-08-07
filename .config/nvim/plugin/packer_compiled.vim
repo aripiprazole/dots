@@ -75,13 +75,13 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/agda-vim"
   },
+  aniseed = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/aniseed"
+  },
   ["auto-pairs"] = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/auto-pairs"
-  },
-  ["compe-tabnine"] = {
-    loaded = true,
-    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/compe-tabnine"
   },
   conjure = {
     loaded = true,

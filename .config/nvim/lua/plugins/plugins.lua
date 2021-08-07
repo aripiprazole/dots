@@ -39,9 +39,9 @@ return require('packer').startup(function()
   use 'onsails/lspkind-nvim'
   use 'hrsh7th/vim-vsnip'
   use {
-    'tzachar/compe-tabnine',
-    run='./install.sh',
-    requires='hrsh7th/nvim-compe'
+   'tzachar/compe-tabnine',
+   run='./install.sh',
+   requires='hrsh7th/nvim-compe'
   }
   use 'fleischie/vim-styled-components'
 

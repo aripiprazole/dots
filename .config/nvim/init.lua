@@ -89,3 +89,9 @@ cmd 'au TermOpen * setlocal nonumber norelativenumber'
 cmd 'autocmd BufNewFile,BufRead .babelrc set filetype=json'
 cmd 'autocmd BufNewFile,BufRead .eslintrc set filetype=javascript'
 cmd 'autocmd BufNewFile,BufRead .prettierrc set filetype=json'
+
+cmd [[
+  autocmd BufWinEnter,WinEnter,TermOpen term://* setlocal norelativenumber
+  autocmd BufWinEnter,WinEnter,TermOpen term://* setlocal nonumber
+  autocmd BufWinEnter,WinEnter,TermOpen term://* setlocal signcolumn=no
+]]

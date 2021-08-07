@@ -1,4 +1,6 @@
 local lspconfig = require('lspconfig')
+local configs = require('lspconfig/configs')
+local util = require('lspconfig/util')
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 local servers = {
   'rust_analyzer',
@@ -18,7 +20,16 @@ local servers = {
   'clangd',
   'cmake',
   'flow',
-  'clojure_lsp'
+  'clojure_lsp',
+  'idris'
+}
+
+configs['idris'] = {
+  default_config = {
+    cmd = { 'idris2-lsp' },
+    filetypes = { 'idr' },
+    root_dir = util.find_git_ancestor
+  }
 }
 
 local function on_attach(client, buf)
