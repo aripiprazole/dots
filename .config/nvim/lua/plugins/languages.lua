@@ -27,7 +27,7 @@ local servers = {
 configs['idris'] = {
   default_config = {
     cmd = { 'idris2-lsp' },
-    filetypes = { 'idr' },
+    filetypes = { 'idris' },
     root_dir = util.find_git_ancestor
   }
 }
