@@ -83,6 +83,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/auto-pairs"
   },
+  ["compe-tabnine"] = {
+    loaded = true,
+    path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/compe-tabnine"
+  },
   conjure = {
     loaded = true,
     path = "/home/lorenzog/.local/share/nvim/site/pack/packer/start/conjure"

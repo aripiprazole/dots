@@ -69,6 +69,7 @@ return require('packer').startup(function()
   use 'preservim/nerdcommenter'
   use 'chaoren/vim-wordmotion'
   use 'mhinz/vim-startify'
+  use 'akinsho/nvim-toggleterm.lua'
 
   -- git
   use {

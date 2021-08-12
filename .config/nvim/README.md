@@ -9,6 +9,7 @@ Basic neovim configuration
 | <Tab>       | Complete expression in the menu            | Select, Insert | Expression |
 | <S-Tab>     | Go to the previous expression in the menu  | Select, Insert | Expression |
 | <C-Space>   | Complete expression                        | Normal, Insert | *          |
+| <C-\>       | Opens terminal                             | Normal, Insert | *          |
 | <leader>ff  | Opens the file finder                      | Normal         | *          |
 | <leader>fg  | Opens the finder's live grep               | Normal         | *          |
 | <leader>fb  | Opens the buffer finder                    | Normal         | *          |
