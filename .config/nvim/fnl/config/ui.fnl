@@ -23,12 +23,6 @@
 ;; Disable signcolumn and split between windows
 (vim.cmd "set signcolumn=no")
 (vim.cmd "set fillchars=vert:\\▕")
-(vim.cmd "
-  augroup nosplit | au!
-    autocmd ColorScheme * hi VertSplit ctermfg=bg guifg=bg
-    autocmd ColorScheme * hi NonText guifg=bg
-  augroup end
-  ")
 
 ;; Leader key
 (set g.mapleader " ") ; <Space> key
