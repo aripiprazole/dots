@@ -1,0 +1,157 @@
+{
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontSize": 16,
+  "window.titleBarStyle": "custom",
+  "files.autoSave": "off",
+  "editor.fontFamily": "FiraCode Nerd Font",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
+  "editor.fontLigatures": true,
+  "editor.rulers": [80, 120, 160],
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.visualstar": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    }
+  ],
+  "vim.leader": "<space>",
+  "vim.handleKeys": {
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-y>": false
+  },
+  "editor.suggestSelection": "first",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "cSpell.userWords": [
+    "Hmac",
+    "Neovim",
+    "Vuetify",
+    "actix",
+    "chrono",
+    "dont",
+    "dotenv",
+    "dtos",
+    "jsonwebtoken",
+    "reqwest",
+    "struct",
+    "varkey",
+    "vuex"
+  ],
+  "editor.tabSize": 2,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "[javascript]": {
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.tabSize": 2
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "files.associations": {
+    ".huskyrc": "json"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDragAndDrop": false,
+  "files.exclude": {
+    "**/.next": true,
+    "**/.idea": true,
+    "**/.git": true,
+    "**/.spago": true,
+    "**/node_modules": true,
+    "**/build": true,
+    "**/.gradle": true,
+    "**/*.bs.js": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.ibc": true,
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "idris.idrisPath": "idris2",
+  "idris.idris2Mode": true,
+  "editor.linkedEditing": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "reason_language_server.reloadOnChange": true,
+  "explorer.confirmDelete": false,
+  "window.dialogStyle": "custom",
+  "emmet.includeLanguages": {
+    "rescript": "javascriptreact"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "JSX",
+        "scope": ["entity.name.namespace"],
+        "settings": {
+          "foreground": "#80CBC4"
+        }
+      },
+      // you might also want to set this for polymorphic variants
+      {
+        "name": "other",
+        "scope": ["punctuation.definition.keyword"],
+        "settings": {
+          "foreground": "#f87086"
+        }
+      }
+    ]
+  },
+  "workbench.colorTheme": "Tokyo Night",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.semanticHighlighting.enabled": true,
+  "Lua.telemetry.enable": false,
+  "git.confirmSync": false,
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "[haskell]": {
+    "editor.defaultFormatter": "haskell.haskell"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.inlineSuggest.enabled": true
+}
