@@ -22,6 +22,7 @@
 
 ;; Enable relativenumbers in vim
 (set wo.relativenumber true)
+(set wo.number true)
 (set o.numberwidth 5)
 
 (set wo.wrap false) ;; Disable wrap text option
