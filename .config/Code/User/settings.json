@@ -71,7 +71,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[rust]": {
-    "editor.tabSize": 4
+    "editor.tabSize": 4,
+    "editor.rulers": [100]
   },
   "[vue]": {
     "editor.defaultFormatter": "octref.vetur"

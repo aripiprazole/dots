@@ -1,1 +1,6 @@
-[]
+[
+  {
+    "key": "ctrl+g",
+    "command": "-workbench.action.gotoLine"
+  }
+]
