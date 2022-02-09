@@ -8,7 +8,7 @@
 (local o nvim.o)
 (local wo nvim.wo)
 
-(vim.cmd "set clipboard=unnamedplus") ;; Use system clipboard
+(vim.cmd "set clipboard+=unnamedplus") ;; Use system clipboard
 
 (vim.cmd "set mouse=a") ;; Enable mouse
 
