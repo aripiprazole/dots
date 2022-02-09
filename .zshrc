@@ -15,9 +15,13 @@ export TERM='xterm'
 export EDITOR='nvim'
 
 # ASDF completion configuration
-if [[ -f ${ASDF_DIR} ]] then
-  fpath=(${ASDF_DIR}/completions $fpath)
-fi
+. $HOME/.asdf/asdf.sh
+
+# Append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+
+# Initialise completions with ZSH's compinit
+autoload -Uz compinit && compinit
 
 # ZSH Config
 if [[ -f "$HOME/.config.zsh" ]]; then

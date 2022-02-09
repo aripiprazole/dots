@@ -1,0 +1,3 @@
+[submodule ".asdf"]
+	path = .asdf
+	url = git@github.com:asdf-vm/asdf.git
