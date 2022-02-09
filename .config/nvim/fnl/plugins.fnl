@@ -38,6 +38,9 @@
   :norcalli/nvim-colorizer.lua {}
   :famiu/feline.nvim {}
   :weilbith/nvim-code-action-menu {}
+  
+  ;; Rust
+  :saecki/crates.nvim {}
 
   ;; Auto complete
   :nvim-treesitter/nvim-treesitter {}

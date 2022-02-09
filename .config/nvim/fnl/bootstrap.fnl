@@ -13,4 +13,6 @@
 (require :config.terminal)
 (require :config.tree)
 
+(require :languages.rust)
+
 (nvim.fn.glaive#Install)
