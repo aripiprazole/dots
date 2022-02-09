@@ -90,6 +90,11 @@
     nil)
   nil)
 
+(set capabilities.textDocument.completion.completionItem.snippetSupport true)
+(set capabilities.textDocument.completion.completionItem.resolveSupport {
+  :properties ["documentation" "detail" "additionalTextEdits"]
+})
+
 (each [_ value (ipairs servers)]
   (let [config (. lspconfig value)]
     (config.setup {
