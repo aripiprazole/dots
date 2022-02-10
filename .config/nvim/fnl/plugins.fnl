@@ -57,6 +57,7 @@
   :jiangmiao/auto-pairs {}
   :tpope/vim-surround {}
   :rmagatti/auto-session {}
+  :editorconfig/editorconfig-vim {}
 
   ;; Themes
   :hachy/eva01.vim {}
