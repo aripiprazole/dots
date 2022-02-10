@@ -95,7 +95,7 @@
 (set vim.lsp.handlers.textDocument/documentSymbol  symbols.document_handler)
 (set vim.lsp.handlers.workspace/symbol  symbols.workspace_handler)
 
-(vim.api.nvim_set_keymap "n" "ca"            "<cmd>CodeActionMenu<CR>" {:noremap true :silent true})
+(vim.api.nvim_set_keymap "n" "ca"            "<cmd>lua vim.lsp.buf.code_action()<CR>"        {:noremap true :silent true})
 (vim.api.nvim_set_keymap "n" "gd"            "<cmd>lua vim.lsp.buf.definition()<CR>"         {:noremap true :silent true})
 (vim.api.nvim_set_keymap "n" "gD"            "<cmd>lua vim.lsp.buf.declaration()<CR>"        {:noremap true :silent true})
 (vim.api.nvim_set_keymap "n" "gr"            "<cmd>lua vim.lsp.buf.references()<CR>"         {:noremap true :silent true})

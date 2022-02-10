@@ -41,7 +41,6 @@
   :andymass/vim-matchup {}
   :norcalli/nvim-colorizer.lua {}
   :famiu/feline.nvim {}
-  :weilbith/nvim-code-action-menu {}
   :glepnir/lspsaga.nvim {}
   
   ;; Rust

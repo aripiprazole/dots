@@ -148,7 +148,11 @@
       :find_cmd "find"
     }
     :ui-select [(themes.get_dropdown)]
-    :lsp_handlers {}
+    :lsp_handlers {
+      :code_action {
+        :telescope (themes.get_dropdown)
+      }
+    }
   }
 })
 
@@ -164,12 +168,14 @@
 (vim.api.nvim_set_keymap "n" "<leader>ltd"  "<cmd>TroubleToggle<CR>"                   {:noremap true}) ;; Open TODO menu
 (vim.api.nvim_set_keymap "n" "<leader>so"   "<cmd>SymbolsOutline<CR>"                  {:noremap true}) ;; Open symbol map
 
-(vim.api.nvim_set_keymap "n" "<leader>ff"   "<cmd>Telescope find_files<CR>"            {:noremap true}) ;; Open find files
-(vim.api.nvim_set_keymap "n" "<leader>fd"   "<cmd>Telescope dap commands<CR>"          {:noremap true}) ;; Open dap commands
-(vim.api.nvim_set_keymap "n" "<leader>fdb"  "<cmd>Telescope dap list_breakpoints<CR>"  {:noremap true}) ;; Open dap breakpoints
-(vim.api.nvim_set_keymap "n" "<leader>fdf"  "<cmd>Telescope dap frames<CR>"            {:noremap true}) ;; Open dap frames
-(vim.api.nvim_set_keymap "n" "<leader>fdv"  "<cmd>Telescope dap variables<CR>"         {:noremap true}) ;; Open dap variables
-(vim.api.nvim_set_keymap "n" "<leader>fg"   "<cmd>Telescope live_grep<CR>"             {:noremap true}) ;; Open live grep
-(vim.api.nvim_set_keymap "n" "<leader>fb"   "<cmd>Telescope buffers<CR>"               {:noremap true}) ;; Open openned buffers
-(vim.api.nvim_set_keymap "n" "<leader>fh"   "<cmd>Telescope help_tags<CR>"             {:noremap true}) ;; Open help
-(vim.api.nvim_set_keymap "n" "<leader>fc"   "<cmd>Telescope colorscheme<CR>"           {:noremap true}) ;; Open colorscheme change
+(vim.api.nvim_set_keymap "n" "<leader>ff"     "<cmd>Telescope find_files<CR>"            {:noremap true}) ;; Open find files
+(vim.api.nvim_set_keymap "n" "<leader>fd"     "<cmd>Telescope dap commands<CR>"          {:noremap true}) ;; Open dap commands
+(vim.api.nvim_set_keymap "n" "<leader>fdb"    "<cmd>Telescope dap list_breakpoints<CR>"  {:noremap true}) ;; Open dap breakpoints
+(vim.api.nvim_set_keymap "n" "<leader>fdf"    "<cmd>Telescope dap frames<CR>"            {:noremap true}) ;; Open dap frames
+(vim.api.nvim_set_keymap "n" "<leader>fdv"    "<cmd>Telescope dap variables<CR>"         {:noremap true}) ;; Open dap variables
+(vim.api.nvim_set_keymap "n" "<leader>fg"     "<cmd>Telescope live_grep<CR>"             {:noremap true}) ;; Open live grep
+(vim.api.nvim_set_keymap "n" "<leader>fb"     "<cmd>Telescope buffers<CR>"               {:noremap true}) ;; Open openned buffers
+(vim.api.nvim_set_keymap "n" "<leader>fh"     "<cmd>Telescope help_tags<CR>"             {:noremap true}) ;; Open help
+(vim.api.nvim_set_keymap "n" "<leader>fc"     "<cmd>Telescope colorscheme<CR>"           {:noremap true}) ;; Open colorscheme change
+(vim.api.nvim_set_keymap "n" "<leader>fgit"   "<cmd>Telescope git_commits<CR>"           {:noremap true}) ;; Open telescope commits
+(vim.api.nvim_set_keymap "n" "P"              "<cmd>Telescope commands<CR>"              {:noremap true}) ;; Open telescope commands
