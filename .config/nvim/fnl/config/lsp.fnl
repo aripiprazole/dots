@@ -3,6 +3,7 @@
 
 (local lspconfig (require :lspconfig))
 
+(local fidget (require :fidget))
 (local configs (require :lspconfig.configs))
 (local util (require :lspconfig.util))
 (local code-action (require :lsputil.codeAction))
@@ -85,6 +86,8 @@
         :capabilities capabilities
         :on_attach on-atach
       })))
+
+(fidget.setup {})
 
 (set vim.lsp.handlers.textDocument/codeAction  code-action.code_action_handler)
 (set vim.lsp.handlers.textDocument/references  locations.references_handler)

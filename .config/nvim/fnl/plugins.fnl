@@ -96,6 +96,7 @@
   :onsails/lspkind-nvim {}
   :hrsh7th/vim-vsnip {}
   :hrsh7th/vim-vsnip-integ {}
+  :j-hui/fidget.nvim {}
 
   ;; Code runner
   :michaelb/sniprun {}
