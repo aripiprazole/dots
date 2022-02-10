@@ -3,6 +3,7 @@
 (local lsp-colors (require :lsp-colors))
 (local lsp-trouble (require :trouble))
 (local telescope (require :telescope))
+(local themes (require :telescope/themes))
 (local which-key (require :which-key))
 (local symbols-outline (require :symbols-outline))
 (local lspkind (require :lspkind))
@@ -20,9 +21,12 @@
 (vim.cmd "syntax enable")
 (vim.cmd "syntax on")
 
-;; Disable signcolumn and split between windows
-(vim.cmd "set signcolumn=no")
+(vim.cmd "set nuw=4")
+(vim.cmd "set cursorline")
+(vim.cmd "set signcolumn=yes")
+
 (vim.cmd "set fillchars=vert:\\▕")
+(vim.cmd "highlight clear SignColumn")
 
 ;; Leader key
 (set g.mapleader " ") ; <Space> key
@@ -65,7 +69,15 @@
 })
 
 ;; Setup Git Signs
-(gitsigns.setup {})
+(gitsigns.setup {
+  :signs {
+    :add          {:hl "GitSignsAdd"    :text "█" :numhl "GitSignsAddNr"    :linehl "GitSignsAddLn"}
+    :change       {:hl "GitSignsChange" :text "█" :numhl "GitSignsChangeNr" :linehl "GitSignsChangeLn"}
+    :delete       {:hl "GitSignsDelete" :text "_" :numhl "GitSignsDeleteNr" :linehl "GitSignsDeleteLn"}
+    :topdelete    {:hl "GitSignsDelete" :text "‾" :numhl "GitSignsDeleteNr" :linehl "GitSignsDeleteLn"}
+    :changedelete {:hl "GitSignsChange" :text "~" :numhl "GitSignsChangeNr" :linehl "GitSignsChangeLn"}
+  }
+})
 
 ;; Setup Which Key
 (which-key.setup {})
@@ -136,17 +148,27 @@
       :filetypes ["png" "jpeg" "jpg" "mp4" "webm" "pdf" "webp"]
       :find_cmd "find"
     }
+    :ui-select [(themes.get_dropdown)]
   }
 })
 
+(telescope.load_extension "ui-select")
+(telescope.load_extension "dap")
+
+(set vim.ui.select (require :popui.ui-overrider))
+
 ;; Setup key bindings
 
-(vim.api.nvim_set_keymap "n" "<leader>ltt" "<cmd>LspTroubleToggle<CR>"      {:noremap true}) ;; Open diagnostic menu
-(vim.api.nvim_set_keymap "n" "<leader>ltd" "<cmd>TroubleToggle<CR>"         {:noremap true}) ;; Open TODO menu
-(vim.api.nvim_set_keymap "n" "<leader>so"  "<cmd>SymbolsOutline<CR>"        {:noremap true}) ;; Open symbol map
+(vim.api.nvim_set_keymap "n" "<leader>ltt"  "<cmd>Trouble<CR>"                         {:noremap true}) ;; Open diagnostic menu
+(vim.api.nvim_set_keymap "n" "<leader>ltd"  "<cmd>TroubleToggle<CR>"                   {:noremap true}) ;; Open TODO menu
+(vim.api.nvim_set_keymap "n" "<leader>so"   "<cmd>SymbolsOutline<CR>"                  {:noremap true}) ;; Open symbol map
 
-(vim.api.nvim_set_keymap "n" "<leader>ff"  "<cmd>Telescope find_files<CR>"  {:noremap true}) ;; Open find files
-(vim.api.nvim_set_keymap "n" "<leader>fg"  "<cmd>Telescope live_grep<CR>"   {:noremap true}) ;; Open live grep
-(vim.api.nvim_set_keymap "n" "<leader>fb"  "<cmd>Telescope buffers<CR>"     {:noremap true}) ;; Open openned buffers
-(vim.api.nvim_set_keymap "n" "<leader>fh"  "<cmd>Telescope help_tags<CR>"   {:noremap true}) ;; Open help
-(vim.api.nvim_set_keymap "n" "<leader>fc"  "<cmd>Telescope colorscheme<CR>" {:noremap true}) ;; Open colorscheme change
+(vim.api.nvim_set_keymap "n" "<leader>ff"   "<cmd>Telescope find_files<CR>"            {:noremap true}) ;; Open find files
+(vim.api.nvim_set_keymap "n" "<leader>fd"   "<cmd>Telescope dap commands<CR>"          {:noremap true}) ;; Open dap commands
+(vim.api.nvim_set_keymap "n" "<leader>fdb"  "<cmd>Telescope dap list_breakpoints<CR>"  {:noremap true}) ;; Open dap breakpoints
+(vim.api.nvim_set_keymap "n" "<leader>fdf"  "<cmd>Telescope dap frames<CR>"            {:noremap true}) ;; Open dap frames
+(vim.api.nvim_set_keymap "n" "<leader>fdv"  "<cmd>Telescope dap variables<CR>"         {:noremap true}) ;; Open dap variables
+(vim.api.nvim_set_keymap "n" "<leader>fg"   "<cmd>Telescope live_grep<CR>"             {:noremap true}) ;; Open live grep
+(vim.api.nvim_set_keymap "n" "<leader>fb"   "<cmd>Telescope buffers<CR>"               {:noremap true}) ;; Open openned buffers
+(vim.api.nvim_set_keymap "n" "<leader>fh"   "<cmd>Telescope help_tags<CR>"             {:noremap true}) ;; Open help
+(vim.api.nvim_set_keymap "n" "<leader>fc"   "<cmd>Telescope colorscheme<CR>"           {:noremap true}) ;; Open colorscheme change

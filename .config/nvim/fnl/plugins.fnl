@@ -34,6 +34,9 @@
   :nvim-telescope/telescope.nvim {}
   :nvim-telescope/telescope-fzf-native.nvim {}
   :nvim-telescope/telescope-media-files.nvim {}
+  :nvim-telescope/telescope-ui-select.nvim {}
+  :nvim-telescope/telescope-dap.nvim {}
+  :hood/popui.nvim {}
   :andymass/vim-matchup {}
   :norcalli/nvim-colorizer.lua {}
   :famiu/feline.nvim {}
@@ -41,6 +44,7 @@
   
   ;; Rust
   :saecki/crates.nvim {}
+  :simrat39/rust-tools.nvim {}
 
   ;; Auto complete
   :nvim-treesitter/nvim-treesitter {}
@@ -94,7 +98,8 @@
 
   ;; Code runner
   :michaelb/sniprun {}
-  ; :puremourning/vimspector {}
+  :mfussenegger/nvim-dap {}
+  :rcarriga/nvim-dap-ui {}
 
   ;; Code actions and formatting
   :RishabhRD/nvim-lsputils {}

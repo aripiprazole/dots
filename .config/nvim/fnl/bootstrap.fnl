@@ -12,6 +12,7 @@
 (require :config.formatting)
 (require :config.terminal)
 (require :config.tree)
+(require :config.debug)
 
 (require :languages.rust)
 

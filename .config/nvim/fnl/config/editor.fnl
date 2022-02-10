@@ -11,6 +11,7 @@
 (vim.cmd "set clipboard+=unnamedplus") ;; Use system clipboard
 
 (vim.cmd "set mouse=a") ;; Enable mouse
+(vim.cmd "set splitbelow")
 
 (vim.cmd "set shiftwidth=2") ;; Set tab width to 2
 (vim.cmd "set encoding=UTF-8") ;; Set file encoding to UTF-8
