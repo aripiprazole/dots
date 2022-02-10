@@ -55,6 +55,8 @@
 (crates.setup {})
 (rust-tools.setup opts)
 
+(vim.cmd "autocmd BufWritePre *.rs lua vim.lsp.buf.formatting()")
+
 (vim.api.nvim_set_keymap "n" "<leader>run" "<cmd>RustRunnables<CR>" {:noremap true}) ;; Open runnables
 (vim.api.nvim_set_keymap "n" "<leader>dbg" "<cmd>RustDebuggables<CR>" {:noremap true}) ;; Open debuggables
 (vim.api.nvim_set_keymap "n" "<leader>rk"  "<cmd>RustHoverActions<CR>" {:noremap true}) ;; Rust hover actions
