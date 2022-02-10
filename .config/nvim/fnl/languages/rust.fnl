@@ -54,3 +54,9 @@
 
 (crates.setup {})
 (rust-tools.setup opts)
+
+(vim.api.nvim_set_keymap "n" "<leader>run" "<cmd>RustRunnables<CR>" {:noremap true}) ;; Open runnables
+(vim.api.nvim_set_keymap "n" "<leader>dbg" "<cmd>RustDebuggables<CR>" {:noremap true}) ;; Open debuggables
+(vim.api.nvim_set_keymap "n" "<leader>rem" "<cmd>RustExpandMacro<CR>" {:noremap true}) ;; Expand rust macro
+(vim.api.nvim_set_keymap "n" "<leader>rrl" "<cmd>RustReloadWorkspace<CR>" {:noremap true}) ;; Reload rust workspace
+(vim.api.nvim_set_keymap "n" "<leader>rcrg" "<cmd>RustReloadWorkspace<CR>" {:noremap true}) ;; Open cargo

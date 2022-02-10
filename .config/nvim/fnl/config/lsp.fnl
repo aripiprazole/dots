@@ -55,9 +55,9 @@
   (buf-set-keymap buf "i" "<CR>"      "compe#confirm('<CR>')" { :silent true :expr true })
 
   (if client.resolved_capabilities.document_formatting
-      (buf-set-keymap buf "n" "<leader>lf"   "<cmd>lua vim.lsp.buf.formatting()<CR>"       opts)
+      (buf-set-keymap buf "n" "<leader>lf"   "<cmd>lua vim.lsp.buf.formatting()<CR>"       {:noremap true :silent true})
     (client.resolved_capabilities.document_range_formatting)
-      (buf-set-keymap buf "n" "<leader>lf"   "<cmd>lua vim.lsp.buf.range_formatting()<CR>" opts)
+      (buf-set-keymap buf "n" "<leader>lf"   "<cmd>lua vim.lsp.buf.range_formatting()<CR>" {:noremap true :silent true})
       nil)
   
   (when client.resolved_capabilities.document_highlight
