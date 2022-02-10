@@ -56,6 +56,7 @@
   :numToStr/Comment.nvim {}
   :jiangmiao/auto-pairs {}
   :tpope/vim-surround {}
+  :rmagatti/auto-session {}
 
   ;; Themes
   :hachy/eva01.vim {}

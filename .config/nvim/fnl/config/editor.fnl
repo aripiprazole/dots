@@ -3,6 +3,7 @@
 (local Comment (require :Comment))
 (local colorizer (require :colorizer))
 (local indent-blankline (require :indent_blankline))
+(local auto-session (require :auto-session))
 
 (local g nvim.g)
 (local o nvim.o)
@@ -38,6 +39,10 @@
     :line "gcc"
     :block "gcb"
   }
+})
+
+(auto-session.setup {
+  :auto_session_suppress_dirs ["~/" "~/Projects"]
 })
 
 (indent-blankline.setup {
