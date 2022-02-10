@@ -130,6 +130,9 @@
 
 ;; Setup telescope
 (telescope.setup {
+  :defaults {
+    :file_ignore_patterns ["node_modules" "target" "build" "dist" "out" "vendor" "_esy" ".yarn" ".gradle" ".idea" ".vscode"]
+  }
   :pickers {
     :find_files {:theme :dropdown :prompt_prefix "🔍"}
     :buffers {:theme :dropdown}
