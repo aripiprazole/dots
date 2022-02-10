@@ -100,6 +100,7 @@
   :michaelb/sniprun {}
   :mfussenegger/nvim-dap {}
   :rcarriga/nvim-dap-ui {}
+  :theHamsta/nvim-dap-virtual-text {}
 
   ;; Code actions and formatting
   :RishabhRD/nvim-lsputils {}
