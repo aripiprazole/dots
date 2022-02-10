@@ -95,7 +95,7 @@
 (set vim.lsp.handlers.textDocument/documentSymbol  symbols.document_handler)
 (set vim.lsp.handlers.workspace/symbol  symbols.workspace_handler)
 
-(vim.api.nvim_set_keymap "n" "ca"            "<cmd>:CodeActionMenu<CR>" {:noremap true})
+(vim.api.nvim_set_keymap "n" "ca"            "<cmd>CodeActionMenu<CR>" {:noremap true :silent true})
 (vim.api.nvim_set_keymap "n" "gd"            "<cmd>lua vim.lsp.buf.definition()<CR>"         {:noremap true :silent true})
 (vim.api.nvim_set_keymap "n" "gD"            "<cmd>lua vim.lsp.buf.declaration()<CR>"        {:noremap true :silent true})
 (vim.api.nvim_set_keymap "n" "gr"            "<cmd>lua vim.lsp.buf.references()<CR>"         {:noremap true :silent true})
@@ -104,4 +104,4 @@
 (vim.api.nvim_set_keymap "n" "<C-k>"         "<cmd>lua vim.lsp.buf.signature_help()<CR>"     {:noremap true :silent true})
 (vim.api.nvim_set_keymap "n" "<C-n>"         "<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>"   {:noremap true :silent true})
 (vim.api.nvim_set_keymap "n" "<C-p>"         "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>"   {:noremap true :silent true})
-(vim.api.nvim_set_keymap "n" "rn"            "<cmd>lua vim.lsp.buf.rename()<CR>"             {:noremap true :silent true})
+(vim.api.nvim_set_keymap "n" "rn"            "<cmd>Lspsaga rename<CR>"                       {:noremap true :silent true})

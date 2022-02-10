@@ -36,11 +36,13 @@
   :nvim-telescope/telescope-media-files.nvim {}
   :nvim-telescope/telescope-ui-select.nvim {}
   :nvim-telescope/telescope-dap.nvim {}
+  :gbrlsnchs/telescope-lsp-handlers.nvim {}
   :hood/popui.nvim {}
   :andymass/vim-matchup {}
   :norcalli/nvim-colorizer.lua {}
   :famiu/feline.nvim {}
   :weilbith/nvim-code-action-menu {}
+  :glepnir/lspsaga.nvim {}
   
   ;; Rust
   :saecki/crates.nvim {}

@@ -149,9 +149,11 @@
       :find_cmd "find"
     }
     :ui-select [(themes.get_dropdown)]
+    :lsp_handlers {}
   }
 })
 
+(telescope.load_extension "lsp_handlers")
 (telescope.load_extension "ui-select")
 (telescope.load_extension "dap")
 
