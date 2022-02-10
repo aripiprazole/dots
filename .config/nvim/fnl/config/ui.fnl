@@ -178,4 +178,4 @@
 (vim.api.nvim_set_keymap "n" "<leader>fh"     "<cmd>Telescope help_tags<CR>"             {:noremap true}) ;; Open help
 (vim.api.nvim_set_keymap "n" "<leader>fc"     "<cmd>Telescope colorscheme<CR>"           {:noremap true}) ;; Open colorscheme change
 (vim.api.nvim_set_keymap "n" "<leader>fgit"   "<cmd>Telescope git_commits<CR>"           {:noremap true}) ;; Open telescope commits
-(vim.api.nvim_set_keymap "n" "P"              "<cmd>Telescope commands<CR>"              {:noremap true}) ;; Open telescope commands
+(vim.api.nvim_set_keymap "n" "<C-P>"          "<cmd>Telescope commands<CR>"              {:noremap true}) ;; Open telescope commands
