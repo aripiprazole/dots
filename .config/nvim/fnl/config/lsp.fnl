@@ -51,24 +51,8 @@
 
   (buf-set-option buf :omnifunc "v:lua.vim.lsp.omnifunc")
 
-  (var opts { :silent true :expr true })
-
-  (buf-set-keymap buf "i" "<C-Space>" "compe#complete()"                               opts)
-  (buf-set-keymap buf "i" "<CR>"      "compe#confirm('<CR>')"                          opts)
-
-  (set opts { :noremap true :silent true })
-
-  (buf-set-keymap buf "n" "<C-LeftMouse>" "<cmd>lua vim.lsp.buf.definition()<CR>"         opts)
-  (buf-set-keymap buf "n" "gd"            "<cmd>lua vim.lsp.buf.definition()<CR>"         opts)
-  (buf-set-keymap buf "n" "gD"            "<cmd>lua vim.lsp.buf.declaration()<CR>"        opts)
-  (buf-set-keymap buf "n" "gr"            "<cmd>lua vim.lsp.buf.references()<CR>"         opts)
-  (buf-set-keymap buf "n" "gi"            "<cmd>lua vim.lsp.buf.implementation()<CR>"     opts)
-  (buf-set-keymap buf "n" "K"             "<cmd>lua vim.lsp.buf.hover()<CR>"              opts)
-  (buf-set-keymap buf "n" "<C-k>"         "<cmd>lua vim.lsp.buf.signature_help()<CR>"     opts)
-  (buf-set-keymap buf "n" "<C-n>"         "<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>"   opts)
-  (buf-set-keymap buf "n" "<C-p>"         "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>"   opts)
-  (buf-set-keymap buf "n" "<leader>rn"    "<cmd>lua vim.lsp.buf.rename()<CR>"             opts)
-  (buf-set-keymap buf "n" "ca"            "<cmd>:CodeActionMenu<CR>"                      opts)
+  (buf-set-keymap buf "i" "<C-Space>" "compe#complete()"      { :silent true :expr true })
+  (buf-set-keymap buf "i" "<CR>"      "compe#confirm('<CR>')" { :silent true :expr true })
 
   (if client.resolved_capabilities.document_formatting
       (buf-set-keymap buf "n" "<leader>lf"   "<cmd>lua vim.lsp.buf.formatting()<CR>"       opts)
@@ -110,3 +94,14 @@
 (set vim.lsp.handlers.textDocument/implementation  locations.implementation_handler)
 (set vim.lsp.handlers.textDocument/documentSymbol  symbols.document_handler)
 (set vim.lsp.handlers.workspace/symbol  symbols.workspace_handler)
+
+(vim.api.nvim_set_keymap "n" "ca"            "<cmd>:CodeActionMenu<CR>" {:noremap true})
+(vim.api.nvim_set_keymap "n" "gd"            "<cmd>lua vim.lsp.buf.definition()<CR>"         {:noremap true :silent true})
+(vim.api.nvim_set_keymap "n" "gD"            "<cmd>lua vim.lsp.buf.declaration()<CR>"        {:noremap true :silent true})
+(vim.api.nvim_set_keymap "n" "gr"            "<cmd>lua vim.lsp.buf.references()<CR>"         {:noremap true :silent true})
+(vim.api.nvim_set_keymap "n" "gi"            "<cmd>lua vim.lsp.buf.implementation()<CR>"     {:noremap true :silent true})
+(vim.api.nvim_set_keymap "n" "K"             "<cmd>lua vim.lsp.buf.hover()<CR>"              {:noremap true :silent true})
+(vim.api.nvim_set_keymap "n" "<C-k>"         "<cmd>lua vim.lsp.buf.signature_help()<CR>"     {:noremap true :silent true})
+(vim.api.nvim_set_keymap "n" "<C-n>"         "<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>"   {:noremap true :silent true})
+(vim.api.nvim_set_keymap "n" "<C-p>"         "<cmd>lua vim.lsp.diagnostic.goto_next()<CR>"   {:noremap true :silent true})
+(vim.api.nvim_set_keymap "n" "rn"            "<cmd>lua vim.lsp.buf.rename()<CR>"             {:noremap true :silent true})
