@@ -13,6 +13,7 @@
 (require :config.terminal)
 (require :config.tree)
 (require :config.debug)
+(require :config.which-key)
 
 (require :languages.rust)
 

@@ -4,7 +4,6 @@
 (local lsp-trouble (require :trouble))
 (local telescope (require :telescope))
 (local themes (require :telescope/themes))
-(local which-key (require :which-key))
 (local symbols-outline (require :symbols-outline))
 (local lspkind (require :lspkind))
 (local gitsigns (require :gitsigns))
@@ -78,9 +77,6 @@
     :changedelete {:hl "GitSignsChange" :text "~" :numhl "GitSignsChangeNr" :linehl "GitSignsChangeLn"}
   }
 })
-
-;; Setup Which Key
-(which-key.setup {})
 
 ;; Setup LSP Trouble
 (lsp-trouble.setup {})
