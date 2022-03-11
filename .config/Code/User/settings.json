@@ -1,10 +1,10 @@
 {
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Gruvbox Dark Hard",
+  "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
   "window.titleBarStyle": "custom",
   "window.dialogStyle": "custom",
-  "editor.fontSize": 16,
-  "editor.fontFamily": "FiraCode Nerd Font",
+  "editor.fontSize": 15.6,
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": true,
   "editor.rulers": [80, 120, 160],
   "editor.inlineSuggest.enabled": true,
@@ -18,9 +18,9 @@
     "source.fixAll.eslint": true
   },
   "files.autoSave": "off",
-  "terminal.integrated.fontFamily": "FiraCode Nerd Font",
-  "customizeUI.font.regular": "FiraCode Nerd Font",
-  "customizeUI.font.monospace": "FiraCode Nerd Font",
+  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "customizeUI.font.regular": "JetBrainsMono Nerd Font",
+  "customizeUI.font.monospace": "JetBrainsMono Nerd Font",
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
   "security.workspace.trust.untrustedFiles": "open",
   "git.confirmSync": false,
@@ -146,5 +146,6 @@
     "XXX",
     "[ ]",
     "[x]"
-  ]
+  ],
+  "workbench.productIconTheme": "feather-vscode"
 }
