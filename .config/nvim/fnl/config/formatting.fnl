@@ -1,13 +1,18 @@
-vim.cmd "autocmd BufWritePre * bzl AutoFormatBuffer buildifier"
-vim.cmd "autocmd BufWritePre * c,cpp,proto,javascript,arduino AutoFormatBuffer clang-format"
-vim.cmd "autocmd BufWritePre * dart AutoFormatBuffer dartfmt"
-vim.cmd "autocmd BufWritePre * go AutoFormatBuffer gofmt"
-vim.cmd "autocmd BufWritePre * gn AutoFormatBuffer gn"
-vim.cmd "autocmd BufWritePre * html,css,sass,scss,less,json AutoFormatBuffer js-beautify"
-vim.cmd "autocmd BufWritePre * java AutoFormatBuffer google-java-format"
-vim.cmd "autocmd BufWritePre * python AutoFormatBuffer yapf"
-vim.cmd "autocmd BufWritePre * rust AutoFormatBuffer rustfmt"
-vim.cmd "autocmd BufWritePre * vue AutoFormatBuffer prettier" ;; TODO: use eslint
+(vim.cmd "
+  augroup autoformat_settings
+    autocmd FileType bzl AutoFormatBuffer buildifier
+    autocmd FileType c,cpp,proto,javascript,arduino AutoFormatBuffer clang-format
+    autocmd FileType dart AutoFormatBuffer dartfmt
+    autocmd FileType go AutoFormatBuffer gofmt
+    autocmd FileType gn AutoFormatBuffer gn
+    autocmd FileType html,css,sass,scss,less,json AutoFormatBuffer js-beautify
+    autocmd FileType java AutoFormatBuffer google-java-format
+    autocmd FileType python AutoFormatBuffer yapf
+    autocmd FileType rust AutoFormatBuffer rustfmt
+    autocmd FileType vue AutoFormatBuffer prettier
+  augroup END") ;; TODO: use eslint
+
+(vim.cmd "let g:rustfmt_autosave = 1")
 
 ;; Setup key bindings
 

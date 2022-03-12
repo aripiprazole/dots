@@ -9,6 +9,7 @@
 (local code-action (require :lsputil.codeAction))
 (local locations (require :lsputil.locations))
 (local symbols (require :lsputil.symbols))
+(local null-ls (require :null-ls))
 
 (local capabilities (vim.lsp.protocol.make_client_capabilities) )
 (local servers [
@@ -88,6 +89,16 @@
       })))
 
 (fidget.setup {})
+
+(fn fmt-on-save [ client ]
+  (if client.resolved_capabilities.document_formatting
+    (vim.cmd "
+      augroup LspFormatting
+          autocmd! * <buffer>
+          autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()
+      augroup END")))
+
+(null-ls.setup {:on_attach fmt-on-save})
 
 (set vim.lsp.handlers.textDocument/codeAction  code-action.code_action_handler)
 (set vim.lsp.handlers.textDocument/references  locations.references_handler)

@@ -98,6 +98,7 @@
   :hrsh7th/vim-vsnip {}
   :hrsh7th/vim-vsnip-integ {}
   :j-hui/fidget.nvim {}
+  :jose-elias-alvarez/null-ls.nvim {}
 
   ;; Code runner
   :michaelb/sniprun {}
