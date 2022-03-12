@@ -24,7 +24,7 @@
 (vim.cmd "set cursorline")
 (vim.cmd "set signcolumn=yes")
 
-(vim.cmd "set fillchars=vert:\\▕")
+(vim.cmd "set fillchars=fold:\\ ,vert:\\▕,eob:\\ ,msgsep:‾")
 (vim.cmd "highlight clear SignColumn")
 
 ;; Leader key
