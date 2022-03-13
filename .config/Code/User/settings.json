@@ -147,5 +147,6 @@
     "[ ]",
     "[x]"
   ],
-  "workbench.productIconTheme": "feather-vscode"
+  "workbench.productIconTheme": "feather-vscode",
+  "editor.lineNumbers": "relative"
 }
