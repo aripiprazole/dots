@@ -20,7 +20,7 @@
 (vim.cmd "syntax enable")
 (vim.cmd "syntax on")
 
-(vim.cmd "set nuw=4")
+(vim.cmd "set nuw=5")
 (vim.cmd "set cursorline")
 (vim.cmd "set signcolumn=yes")
 
