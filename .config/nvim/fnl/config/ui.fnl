@@ -26,6 +26,7 @@
 
 (vim.cmd "set fillchars=fold:\\ ,vert:\\▕,eob:\\ ,msgsep:‾")
 (vim.cmd "highlight clear SignColumn")
+(vim.cmd "au ColorScheme * highlight clear SignColumn")
 
 ;; Leader key
 (set g.mapleader " ") ; <Space> key
