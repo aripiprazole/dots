@@ -45,15 +45,17 @@
     files))
 
 (icollect [f _ (scandir extensions-path)]
-  (when (string.match f "^vadimcn\\.vscode-lldb")
+  (when (string.match f "^vadimcn.vscode")
     (set opts.dap.adapter
       (let [code-lldb (.. extensions-path f)]
-        (dap.get_code_lldb_adapter 
+        (dap.get_codelldb_adapter 
           (.. code-lldb "/adapter/codelldb")
           (.. code-lldb "/lldb/lib/liblldb.so"))))))
 
 (crates.setup {})
 (rust-tools.setup opts)
+
+(vim.cmd "let g:rustfmt_autosave = 1")
 
 (vim.api.nvim_set_keymap "n" "<leader>run" "<cmd>RustRunnables<CR>" {:noremap true}) ;; Open runnables
 (vim.api.nvim_set_keymap "n" "<leader>dbg" "<cmd>RustDebuggables<CR>" {:noremap true}) ;; Open debuggables

@@ -12,8 +12,6 @@
     autocmd FileType vue AutoFormatBuffer prettier
   augroup END") ;; TODO: use eslint
 
-(vim.cmd "let g:rustfmt_autosave = 1")
-
 ;; Setup key bindings
 
 (vim.api.nvim_set_keymap "n" "<leader>ft" "<cmd>:FormatCode<CR>" {:noremap true}) ;; Format file
