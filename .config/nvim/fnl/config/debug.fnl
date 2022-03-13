@@ -4,13 +4,12 @@
 
 (dapui.setup {
   :sidebar {
-    :size 10
-    :position "bottom"
+    :size 30
+    :position "left"
     :elements [
-      {:id "repl" :size 0.6}
-      {:id "watches" :size 0.13}
-      {:id "stacks" :size 0.13}
-      {:id "scopes" :size 0.13}
+      {:id "watches" :size 0.2}
+      {:id "stacks" :size 0.4}
+      {:id "scopes" :size 0.4}
     ]
   }
 })
