@@ -90,6 +90,7 @@
   :Olical/conjure {}
   :Olical/aniseed {}
   :fleischie/vim-styled-components {}
+  :tomlion/vim-solidity {}
 
   ;; LSP stuff
   :neovim/nvim-lspconfig {}
