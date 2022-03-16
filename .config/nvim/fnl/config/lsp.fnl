@@ -11,6 +11,8 @@
 (local symbols (require :lsputil.symbols))
 (local null-ls (require :null-ls))
 
+(local lsp-installer (require :nvim-lsp-installer))
+
 (local capabilities (vim.lsp.protocol.make_client_capabilities) )
 (local servers [
   "rust_analyzer"

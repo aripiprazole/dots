@@ -100,6 +100,7 @@
   :hrsh7th/vim-vsnip-integ {}
   :j-hui/fidget.nvim {}
   :jose-elias-alvarez/null-ls.nvim {}
+  :williamboman/nvim-lsp-installer {}
 
   ;; Code runner
   :michaelb/sniprun {}
