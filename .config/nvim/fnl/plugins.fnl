@@ -32,7 +32,7 @@
   :folke/which-key.nvim {}
   :ray-x/lsp_signature.nvim {}
   :nvim-telescope/telescope.nvim {}
-  :nvim-telescope/telescope-fzf-native.nvim {}
+  :nvim-telescope/telescope-fzf-native.nvim {:run "make"}
   :nvim-telescope/telescope-media-files.nvim {}
   :nvim-telescope/telescope-ui-select.nvim {}
   :nvim-telescope/telescope-dap.nvim {}
