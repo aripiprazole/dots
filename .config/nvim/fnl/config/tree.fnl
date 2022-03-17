@@ -16,10 +16,12 @@
     :ignored "◌"
   }
   :folder {
-    :default ""
-    :open ""
+    :arrow_open ""
+    :arrow_closed ""
+    :default ""
+    :open ""
     :empty ""
-    :empty_open ""
+    :empty_open ""
     :symlink ""
     :symlink_open ""
   }
