@@ -42,10 +42,10 @@ compinit
 alias tmux="export TERM=\"screen-256color-bce\" && tmux"
 alias emacs="emacs &"
 
-if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-  export TERM="screen-256color-bce"
-  tmux attach -t default || tmux new -s default
-fi
+# if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+  # export TERM="screen-256color-bce"
+  # tmux attach -t default || tmux new -s default
+# fi
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
