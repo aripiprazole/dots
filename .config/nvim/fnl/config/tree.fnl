@@ -55,5 +55,10 @@
       :error ""
     }
   }
+  :view {
+    :side :left
+    :width 25
+    :hide_root_folder true
+  }
   :update_focused_file {:enable true}
 })
