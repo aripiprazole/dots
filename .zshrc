@@ -17,11 +17,13 @@ export EDITOR='nvim'
 # ASDF completion configuration
 . $HOME/.asdf/asdf.sh
 
-# Append completions to fpath
-fpath=(${ASDF_DIR}/completions $fpath)
+if [[ -f ${ASDF_DIR} ]] then
+  # Append completions to fpath
+  fpath=(${ASDF_DIR}/completions $fpath)
 
-# Initialise completions with ZSH's compinit
-autoload -Uz compinit && compinit
+  # Initialise completions with ZSH's compinit
+  autoload -Uz compinit && compinit 
+fi
 
 # ZSH Config
 if [[ -f "$HOME/.config.zsh" ]]; then
@@ -36,3 +38,15 @@ source $HOME/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 autoload -Uz compinit
 
 compinit
+
+alias tmux="export TERM=\"screen-256color-bce\" && tmux"
+alias emacs="emacs --batch"
+
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+  export TERM="screen-256color-bce"
+  tmux attach -t default || tmux new -s default
+fi
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
