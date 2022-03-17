@@ -14,7 +14,7 @@
 
 ;; Set theme TODO: move to config
 (vim.cmd "set background=dark")
-(vim.cmd "colorscheme gruvbox8")
+(vim.cmd "colorscheme tokyonight")
 
 ;; Enable syntax highlight
 (vim.cmd "syntax enable")
@@ -71,11 +71,11 @@
 ;; Setup Git Signs
 (gitsigns.setup {
   :signs {
-    :add          {:hl "DiffAdd"          :text "│":numhl "GitSignsAddNr"}
-    :change       {:hl "DiffChange"       :text "│" :numhl "GitSignsChangeNr"}
-    :delete       {:hl "DiffDelete"       :text "" :numhl "GitSignsDeleteNr"}
-    :topdelete    {:hl "DiffDelete"       :text "‾" :numhl "GitSignsDeleteNr"}
-    :changedelete {:hl "DiffChangeDelete" :text "~" :numhl "GitSignsChangeNr"}
+    :add          {:hl "GitSignsAdd"    :text "█" :numhl "GitSignsAddNr"    :linehl "GitSignsAddLn"}
+    :change       {:hl "GitSignsChange" :text "█" :numhl "GitSignsChangeNr" :linehl "GitSignsChangeLn"}
+    :delete       {:hl "GitSignsDelete" :text "_" :numhl "GitSignsDeleteNr" :linehl "GitSignsDeleteLn"}
+    :topdelete    {:hl "GitSignsDelete" :text "‾" :numhl "GitSignsDeleteNr" :linehl "GitSignsDeleteLn"}
+    :changedelete {:hl "GitSignsChange" :text "~" :numhl "GitSignsChangeNr" :linehl "GitSignsChangeLn"}
   }
 })
 
