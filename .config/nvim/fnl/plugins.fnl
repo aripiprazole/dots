@@ -91,6 +91,7 @@
   :Olical/aniseed {}
   :fleischie/vim-styled-components {}
   :tomlion/vim-solidity {}
+  :scalameta/nvim-metals {}
 
   ;; LSP stuff
   :neovim/nvim-lspconfig {}

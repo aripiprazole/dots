@@ -16,6 +16,7 @@
 (require :config.which-key)
 
 (require :languages.rust)
+(require :languages.scala)
 
 (require :config.theming)
 
