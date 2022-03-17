@@ -40,7 +40,7 @@ autoload -Uz compinit
 compinit
 
 alias tmux="export TERM=\"screen-256color-bce\" && tmux"
-alias emacs="emacs --batch"
+alias emacs="emacs &"
 
 if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
   export TERM="screen-256color-bce"
