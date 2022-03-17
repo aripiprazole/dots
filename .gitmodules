@@ -7,3 +7,6 @@
 [submodule ".tmux/plugins/tmux-gruvbox"]
 	path = .tmux/plugins/tmux-gruvbox
 	url = git@github.com:egel/tmux-gruvbox.git
+[submodule ".emacs.d"]
+	path = .emacs.d
+	url = git@github.com:hlissner/doom-emacs
