@@ -80,7 +80,7 @@
 
 (map! :leader
       :desc "Toggle file tree"
-      "n" #'treemacs)
+      "n" #'neotree)
 
 (map! :leader
       :desc "Toggle breakpoint in the current line"
