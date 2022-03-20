@@ -13,7 +13,6 @@ export LANG=en_US.UTF-8
 export TERM='xterm'
 
 export EDITOR='nvim'
-
 # ASDF completion configuration
 . $HOME/.asdf/asdf.sh
 
@@ -40,7 +39,9 @@ autoload -Uz compinit
 compinit
 
 alias tmux="export TERM=\"screen-256color-bce\" && tmux"
-alias emacs="emacs &"
+alias emacs="doom run"
+
+export PATH="$PATH:$HOME/.emacs.d/bin"
 
 # if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
   # export TERM="screen-256color-bce"
