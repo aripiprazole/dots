@@ -91,6 +91,7 @@
        lsp                 ; M-x vscode
        magit               ; a git porcelain for Emacs
        rgb                 ; creating color strings
+       tree-sitter
        ;;ansible
        ;;biblio            ; Writes a PhD for you (citation needed)
        ;;direnv
