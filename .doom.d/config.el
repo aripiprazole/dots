@@ -8,6 +8,8 @@
 (setq user-full-name "Gabrielle Guimarães de Oliveira"
       user-mail-address "gabrielle1guim@gmail.com")
 
+(require 'dap-cpptools)
+
 (dap-cpptools-setup
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
