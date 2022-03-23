@@ -117,6 +117,8 @@
 (add-hook 'buffer-list-update-hook #'set-dap-ui-local-mode)
 (add-hook 'buffer-list-update-hook #'set-run-bufs-local-mode)
 (add-hook 'vterm-mode-hook 'centaur-tabs-local-mode)
+(add-hook 'dired-mode-hook 'centaur-tabs-local-mode)
+(add-hook 'doom-scratch-buffer-hook 'centaur-tabs-local-mode)
 
 ;; Rust configuration
 (setq lsp-rust-analyzer-server-display-inlay-hints t)
