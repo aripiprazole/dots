@@ -114,16 +114,9 @@
              (bound-and-true-p centaur-tabs-mode))
     (centaur-tabs-local-mode)))
 
-;; Disable centaur-tabs in vterm buffers
-(defun set-vterm-bufs-local-mode ()
-  (when (and (stringp (buffer-name))
-             (string= "*vterm*" (buffer-name))
-             (bound-and-true-p centaur-tabs-mode))
-    (centaur-tabs-local-mode)))
-
 (add-hook 'buffer-list-update-hook #'set-dap-ui-local-mode)
 (add-hook 'buffer-list-update-hook #'set-run-bufs-local-mode)
-(add-hook 'buffer-list-update-hook #'set-vterm-bufs-local-mode)
+(add-hook 'vterm-mode-hook 'centaur-tabs-local-mode)
 
 ;; Rust configuration
 (setq lsp-rust-analyzer-server-display-inlay-hints t)
