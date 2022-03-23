@@ -84,14 +84,13 @@
 
 (map! :leader
       :desc "Toggle file tree"
-      "n" #'neotree-toggle)
+      "n" #'treemacs)
 
 (map! :leader
       :desc "Toggle breakpoint in the current line"
       "d" #'dap-breakpoint-toggle)
 
-(map! :leader
-      :desc "Deletes the current buffer"
+(map! :leader :desc "Deletes the current buffer"
       "r" #'kill-current-buffer)
 
 ;; DAP Mode configuration
@@ -128,3 +127,14 @@
 
 ;; Rust configuration
 (setq lsp-rust-analyzer-server-display-inlay-hints t)
+
+;; Treemacs
+(treemacs-indent-guide-mode)
+
+(setq doom-themes-treemacs-theme "doom-colors")
+
+(with-eval-after-load 'treemacs
+  (defun treemacs-ignore-gitignore (file _)
+    (string= file ".gitignore"))
+
+  (push #'treemacs-ignore-gitignore treemacs-ignored-file-predicates))

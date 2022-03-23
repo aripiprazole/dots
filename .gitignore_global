@@ -1,0 +1,9 @@
+node_modules/
+.next/
+.gradle/
+.yarn/
+out/
+target/
+build/
+vendor/
+_esy/

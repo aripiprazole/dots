@@ -28,11 +28,11 @@
 
        :ui
        (popup +defaults) ; tame sudden yet inevitable temporary windows
+       (treemacs +lsp)   ; a project drawer, like neotree but cooler
        deft              ; notational velocity for Emacs
        doom              ; what makes DOOM look the way it does
        doom-dashboard    ; a nifty splash screen for Emacs
        modeline          ; snazzy, Atom-inspired modeline, plus API
-       neotree           ; a project drawer, like NERDTree for vim
        ophints           ; highlight the region an operation acts on
        tabs              ; a tab bar for Emacs
        unicode           ; extended unicode support for various languages
@@ -47,7 +47,7 @@
        ;;(ligatures +extra +fira) ; ligatures and symbols to make your code pretty again
        ;;minimap         ; show a map of the code on the side
        ;;nav-flash       ; blink cursor line after big motions
-       ;;treemacs        ; a project drawer, like neotree but cooler
+       ;;neotree         ; a project drawer, like NERDTree for vim
        ;;window-select   ; visually switch windows
        ;;zen             ; distraction-free coding or writing
 
@@ -91,7 +91,6 @@
        lsp                 ; M-x vscode
        magit               ; a git porcelain for Emacs
        rgb                 ; creating color strings
-       tree-sitter
        ;;ansible
        ;;biblio            ; Writes a PhD for you (citation needed)
        ;;direnv
@@ -112,9 +111,9 @@
        ;;tty               ; improve the terminal Emacs experience
 
        :lang
-       (haskell +lsp +tree-sitter)    ; a language that's lazier than I am
-       (kotlin +lsp +tree-sitter)     ; a better, slicker Java(Script)
-       (javascript +lsp +tree-sitter) ; all(hope(abandon(ye(who(enter(here))))))
+       (haskell +lsp)      ; a language that's lazier than I am
+       (kotlin +lsp)       ; a better, slicker Java(Script)
+       (javascript +lsp)   ; all(hope(abandon(ye(who(enter(here))))))
        (cc +lsp)           ; C > C++ == 1
        (idris +lsp)        ; a language you can depend on
        (java +lsp)         ; the poster child for carpal tunnel syndrome
