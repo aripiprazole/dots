@@ -93,3 +93,28 @@
 (map! :leader
       :desc "Deletes the current buffer"
       "r" #'kill-current-buffer)
+
+;; DAP Mode configuration
+;; Use tooltips for mouse hover
+;; If it is not enabled `dap-mode' will use the minibuffer.
+(tooltip-mode 1)
+;; Displays floating panel with debug buttons
+(dap-ui-controls-mode 1)
+
+;; Disable centaur-tabs in dap ui buffers
+(defun set-dap-ui-local-mode ()
+  (when (and (stringp (buffer-name))
+             (string-match "\\*dap-ui-\\(\\w\\)" (buffer-name))
+             (bound-and-true-p centaur-tabs-mode))
+    (centaur-tabs-local-mode)))
+
+(add-hook 'buffer-list-update-hook #'set-dap-ui-local-mode)
+
+;; Disable centaur-tabs in run buffers
+(defun set-run-bufs-local-mode ()
+  (when (and (stringp (buffer-name))
+             (string-match "\\*run \\(\\w\\)" (buffer-name))
+             (bound-and-true-p centaur-tabs-mode))
+    (centaur-tabs-local-mode)))
+
+(add-hook 'buffer-list-update-hook #'set-run-bufs-local-mode)
