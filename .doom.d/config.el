@@ -114,10 +114,15 @@
              (bound-and-true-p centaur-tabs-mode))
     (centaur-tabs-local-mode)))
 
+;; Disable centaur-tabs in dired
+(defun set-dired-bufs-local-mode ()
+  (when (bound-and-true-p centaur-tabs-mode)
+    (centaur-tabs-local-mode)))
+
 (add-hook 'buffer-list-update-hook #'set-dap-ui-local-mode)
 (add-hook 'buffer-list-update-hook #'set-run-bufs-local-mode)
+(add-hook 'dired-mode-hook #'set-dired-bufs-local-mode)
 (add-hook 'vterm-mode-hook 'centaur-tabs-local-mode)
-(add-hook 'dired-mode-hook 'centaur-tabs-local-mode)
 (add-hook 'doom-scratch-buffer-hook 'centaur-tabs-local-mode)
 
 ;; Rust configuration
