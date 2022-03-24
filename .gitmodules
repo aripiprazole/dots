@@ -10,3 +10,6 @@
 [submodule ".emacs.d"]
 	path = .emacs.d
 	url = git@github.com:hlissner/doom-emacs
+[submodule ".config/nvim"]
+	path = .config/nvim
+	url = git@github.com:gabrielleeg1/pudim
