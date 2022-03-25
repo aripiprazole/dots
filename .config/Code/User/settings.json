@@ -1,102 +1,71 @@
 {
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.productIconTheme": "feather-vscode",
   "window.titleBarStyle": "custom",
   "window.dialogStyle": "custom",
+
+  "security.workspace.trust.untrustedFiles": "open",
+  "git.confirmSync": false,
+
   "editor.fontSize": 15.6,
   "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.fontLigatures": true,
-  "editor.rulers": [80, 120, 160],
-  "editor.inlineSuggest.enabled": true,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
+  "editor.rulers": [80, 120, 160],
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.inlineSuggest.enabled": true,
   "editor.semanticHighlighting.enabled": true,
   "editor.tabSize": 2,
   "editor.linkedEditing": true,
   "editor.suggestSelection": "first",
+  "editor.lineNumbers": "relative",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "files.autoSave": "off",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "JSX",
+        "scope": ["entity.name.namespace"],
+        "settings": {
+          "foreground": "#80CBC4"
+        }
+      },
+      // you might also want to set this for polymorphic variants
+      {
+        "name": "other",
+        "scope": ["punctuation.definition.keyword"],
+        "settings": {
+          "foreground": "#f87086"
+        }
+      }
+    ]
+  },
+
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+
   "customizeUI.font.regular": "JetBrainsMono Nerd Font",
   "customizeUI.font.monospace": "JetBrainsMono Nerd Font",
+
   "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
-  "security.workspace.trust.untrustedFiles": "open",
-  "git.confirmSync": false,
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "vim.easymotion": true,
-  "vim.incsearch": true,
-  "vim.useSystemClipboard": true,
-  "vim.useCtrlKeys": true,
-  "vim.hlsearch": true,
-  "vim.visualstar": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<leader>", "d"],
-      "after": ["d", "d"]
-    },
-    {
-      "before": ["<C-n>"],
-      "commands": [":nohl"]
-    }
-  ],
-  "vim.leader": "<space>",
-  "vim.handleKeys": {
-    "<C-g>": true,
-    "<C-a>": false,
-    "<C-f>": false,
-    "<C-p>": false,
-    "<C-y>": false
-  },
-  "idris.idrisPath": "idris2",
-  "idris.idris2Mode": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "reason_language_server.reloadOnChange": true,
-  "emmet.includeLanguages": {
-    "rescript": "javascriptreact"
-  },
-  "[haskell]": {
-    "editor.defaultFormatter": "haskell.haskell"
-  },
-  "[yaml]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[rust]": {
-    "editor.tabSize": 4,
-    "editor.rulers": [100]
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
-  },
-  "[javascript]": {
-    "editor.tabSize": 2
-  },
-  "[typescriptreact]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.tabSize": 2,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+
+  "files.autoSave": "off",
   "files.associations": {
     ".huskyrc": "json"
   },
@@ -119,34 +88,82 @@
     "**/.settings": true,
     "**/.factorypath": true
   },
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "name": "JSX",
-        "scope": ["entity.name.namespace"],
-        "settings": {
-          "foreground": "#80CBC4"
-        }
-      },
-      // you might also want to set this for polymorphic variants
-      {
-        "name": "other",
-        "scope": ["punctuation.definition.keyword"],
-        "settings": {
-          "foreground": "#f87086"
-        }
-      }
-    ]
-  },
-  "todo-tree.general.tags": [
-    "BUG",
-    "HACK",
-    "FIXME",
-    "TODO",
-    "XXX",
-    "[ ]",
-    "[x]"
+
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.visualstar": true,
+  "vim.leader": "<space>",
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
   ],
-  "workbench.productIconTheme": "feather-vscode",
-  "editor.lineNumbers": "relative"
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<leader>", "d"],
+      "after": ["d", "d"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": [":nohl"]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-g>": true,
+    "<C-a>": false,
+    "<C-f>": false,
+    "<C-p>": false,
+    "<C-y>": false
+  },
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterNames.suppressWhenArgumentMatchesName": true,
+  "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+  "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+  "typescript.inlayHints.variableTypes.enabled": true,
+  "typescript.inlayHints.enumMemberValues.enabled": true,
+  "typescript.inlayHints.parameterTypes.enabled": true,
+
+  "reason_language_server.reloadOnChange": true,
+
+  "emmet.includeLanguages": {
+    "rescript": "javascriptreact"
+  },
+
+  "[rust]": {
+    "editor.tabSize": 4,
+    "editor.rulers": [100]
+  },
+
+  "[haskell]": {
+    "editor.defaultFormatter": "haskell.haskell"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "octref.vetur"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
