@@ -1,8 +1,10 @@
 {
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
-  "workbench.editor.highlightModifiedTabs": true,
   "workbench.productIconTheme": "feather-vscode",
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.activityBar.visible": false,
+
   "window.titleBarStyle": "custom",
   "window.dialogStyle": "custom",
 
