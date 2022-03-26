@@ -96,6 +96,23 @@
   ],
   "vim.normalModeKeyBindings": [
     {
+      "before": ["<C-h>"],
+      "after": ["<C-w>", "h"]
+    },
+    {
+      "before": ["<C-j>"],
+      "after": ["<C-w>", "j"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["<C-w>", "k"]
+    },
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-w>", "l"]
+    },
+
+    {
       "before": ["/"],
       "commands": ["actions.find"]
     },
