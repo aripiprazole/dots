@@ -133,6 +133,18 @@
       "commands": ["workbench.files.action.focusFilesExplorer"]
     },
     {
+      "before": ["<leader>", "p", "p"],
+      "commands": ["workbench.action.openRecent"]
+    },
+    {
+      "before": ["<leader>", "f", "P"],
+      "commands": ["workbench.action.openSettingsJson"]
+    },
+    {
+      "before": ["<leader>", "f", "c"],
+      "commands": ["workbench.action.selectTheme"]
+    },
+    {
       "before": ["<leader>", "f", "e"],
       "commands": ["workbench.view.extensions"]
     },
