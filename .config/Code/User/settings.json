@@ -21,6 +21,7 @@
   "editor.guides.bracketPairs": true,
   "editor.inlineSuggest.enabled": true,
   "editor.semanticHighlighting.enabled": true,
+  "editor.cursorSmoothCaretAnimation": true,
   "editor.tabSize": 2,
   "editor.linkedEditing": true,
   "editor.suggestSelection": "first",
