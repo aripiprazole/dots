@@ -38,9 +38,9 @@
        unicode           ; extended unicode support for various languages
        vc-gutter         ; vcs diff in the fringe
        vi-tilde-fringe   ; fringe tildes to mark beyond EOB
-       workspaces        ; tab emulation, persistence & separate workspaces
        indent-guides     ; highlighted indent columns
        hl-todo           ; highlight TODO/FIXME/NOTE/DEPRECATED/HACK/REVIEW
+       ;;workspaces      ; tab emulation, persistence & separate workspaces
        ;;doom-quit       ; DOOM quit-message prompts when you quit Emacs
        ;;(emoji +unicode); 🙂
        ;;hydra

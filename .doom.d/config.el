@@ -79,8 +79,8 @@
 ;;
 ;;
 (map! :leader
-    :desc "Toggle vterm"
-    "\\" #'vterm-toggle)
+      :desc "Toggle vterm"
+      "\\" #'vterm-toggle)
 
 (map! :leader
       :desc "Toggle file tree"
@@ -90,7 +90,8 @@
       :desc "Toggle breakpoint in the current line"
       "d" #'dap-breakpoint-toggle)
 
-(map! :leader :desc "Deletes the current buffer"
+(map! :leader
+      :desc "Deletes the current buffer"
       "r" #'kill-current-buffer)
 
 ;; DAP Mode configuration
