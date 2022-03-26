@@ -28,25 +28,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "name": "JSX",
-        "scope": ["entity.name.namespace"],
-        "settings": {
-          "foreground": "#80CBC4"
-        }
-      },
-      // you might also want to set this for polymorphic variants
-      {
-        "name": "other",
-        "scope": ["punctuation.definition.keyword"],
-        "settings": {
-          "foreground": "#f87086"
-        }
-      }
-    ]
-  },
 
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
 
@@ -91,36 +72,59 @@
     "**/.factorypath": true
   },
 
+  "vim.leader": "<space>",
   "vim.easymotion": true,
   "vim.incsearch": true,
   "vim.useSystemClipboard": true,
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.visualstar": true,
-  "vim.leader": "<space>",
-  "vim.insertModeKeyBindings": [
-    {
-      "before": ["j", "j"],
-      "after": ["<Esc>"]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["<leader>", "d"],
-      "after": ["d", "d"]
-    },
-    {
-      "before": ["<C-n>"],
-      "commands": [":nohl"]
-    }
-  ],
+  "vim.enableNeovim": true,
   "vim.handleKeys": {
-    "<C-g>": true,
-    "<C-a>": false,
-    "<C-f>": false,
-    "<C-p>": false,
     "<C-y>": false
   },
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["/"],
+      "commands": ["actions.find"]
+    },
+    {
+      "before": ["<leader>", "rn"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": [":"],
+      "commands": ["workbench.action.showCommands"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.closeEditorsInGroup"]
+    },
+    {
+      "before": ["<leader>", "n"],
+      "commands": ["workbench.files.action.focusFilesExplorer"]
+    },
+    {
+      "before": ["<leader>", "f", "e"],
+      "commands": ["workbench.view.extensions"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    }
+  ],
+
+  "haskell.openSourceInHackage": false,
 
   "javascript.updateImportsOnFileMove.enabled": "always",
 
@@ -133,25 +137,15 @@
   "typescript.inlayHints.enumMemberValues.enabled": true,
   "typescript.inlayHints.parameterTypes.enabled": true,
 
-  "reason_language_server.reloadOnChange": true,
-
-  "emmet.includeLanguages": {
-    "rescript": "javascriptreact"
-  },
-
   "[rust]": {
     "editor.tabSize": 4,
     "editor.rulers": [100]
   },
-
   "[haskell]": {
     "editor.defaultFormatter": "haskell.haskell"
   },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[vue]": {
-    "editor.defaultFormatter": "octref.vetur"
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
