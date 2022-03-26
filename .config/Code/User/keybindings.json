@@ -93,5 +93,15 @@
   {
     "key": "ctrl+j",
     "command": "-workbench.action.togglePanel"
+  },
+  {
+    "key": "ctrl+b",
+    "command": "-editor.action.goToDeclaration",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "f9",
+    "command": "-editor.debug.action.toggleBreakpoint",
+    "when": "debuggersAvailable && editorTextFocus"
   }
 ]

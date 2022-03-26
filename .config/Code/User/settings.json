@@ -125,6 +125,14 @@
       "commands": ["workbench.action.showCommands"]
     },
     {
+      "before": ["<C-b>"],
+      "commands": ["editor.debug.action.toggleBreakpoint"]
+    },
+    {
+      "before": ["<leader>", "b"],
+      "commands": ["editor.debug.action.toggleBreakpoint"]
+    },
+    {
       "before": ["<leader>", "qi"],
       "commands": [":q"]
     },
