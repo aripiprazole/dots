@@ -129,14 +129,6 @@
       "commands": ["editor.debug.action.toggleBreakpoint"]
     },
     {
-      "before": ["<leader>", "qi"],
-      "commands": [":q"]
-    },
-    {
-      "before": ["<leader>", "qe"],
-      "commands": ["workbench.action.closeEditorsInGroup"]
-    },
-    {
       "before": ["<leader>", "n"],
       "commands": ["workbench.files.action.focusFilesExplorer"]
     },
