@@ -125,7 +125,11 @@
       "commands": ["workbench.action.showCommands"]
     },
     {
-      "before": ["<leader>", "q"],
+      "before": ["<leader>", "qi"],
+      "commands": [":q"]
+    },
+    {
+      "before": ["<leader>", "qe"],
       "commands": ["workbench.action.closeEditorsInGroup"]
     },
     {
