@@ -1,6 +1,6 @@
 {
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "feather-vscode",
   "workbench.activityBar.visible": false,
   "workbench.editor.highlightModifiedTabs": true,
@@ -80,7 +80,7 @@
   "vim.useCtrlKeys": true,
   "vim.hlsearch": true,
   "vim.visualstar": true,
-  "vim.enableNeovim": true,
+  "vim.enableNeovim": false,
   "vim.handleKeys": {
     "<C-y>": false
   },
