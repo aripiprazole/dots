@@ -2,8 +2,8 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
   "workbench.productIconTheme": "feather-vscode",
-  "workbench.editor.highlightModifiedTabs": true,
   "workbench.activityBar.visible": false,
+  "workbench.editor.highlightModifiedTabs": true,
 
   "window.titleBarStyle": "custom",
   "window.dialogStyle": "custom",
