@@ -2,6 +2,7 @@
   "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "feather-vscode",
+  "workbench.sideBar.location": "right",
   "workbench.activityBar.visible": false,
   "workbench.editor.highlightModifiedTabs": true,
 
