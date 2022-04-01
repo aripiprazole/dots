@@ -132,7 +132,8 @@
 ;; Treemacs
 (treemacs-indent-guide-mode)
 
-(setq doom-themes-treemacs-theme "doom-colors")
+(setq doom-themes-treemacs-theme "doom-colors"
+      treemacs-position 'right)
 
 (with-eval-after-load 'treemacs
   (defun treemacs-ignore-gitignore (file _)
