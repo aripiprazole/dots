@@ -1,8 +1,8 @@
 {
   "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.productIconTheme": "feather-vscode",
   "workbench.sideBar.location": "right",
+  "workbench.productIconTheme": "feather-vscode",
   "workbench.activityBar.visible": false,
   "workbench.editor.highlightModifiedTabs": true,
 
@@ -10,6 +10,7 @@
   "window.dialogStyle": "custom",
 
   "security.workspace.trust.untrustedFiles": "open",
+  "git.autofetch": true,
   "git.confirmSync": false,
 
   "editor.fontSize": 15.6,
