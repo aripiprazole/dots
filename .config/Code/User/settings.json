@@ -3,7 +3,6 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
   "workbench.productIconTheme": "feather-vscode",
-  "workbench.activityBar.visible": false,
   "workbench.editor.highlightModifiedTabs": true,
 
   "window.titleBarStyle": "custom",
@@ -53,7 +52,9 @@
 
   "files.autoSave": "off",
   "files.associations": {
-    ".huskyrc": "json"
+    ".huskyrc": "json",
+    "*.json": "jsonc",
+    "*.uidx": "jsonc"
   },
   "files.exclude": {
     "**/.next": true,
