@@ -1,19 +1,19 @@
 all:
-	ln -s -f .dir_colors $$HOME
-	ln -s -f .gitignore_global $$HOME
-	ln -s -f .ideavimrc $$HOME
-	ln -s -f .tmux.conf $$HOME
-	ln -s -f .zshrc $$HOME
+	ln -s -f $(CURDIR)/.dir_colors $$HOME
+	ln -s -f $(CURDIR)/.gitignore_global $$HOME
+	ln -s -f $(CURDIR)/.ideavimrc $$HOME
+	ln -s -f $(CURDIR)/.tmux.conf $$HOME
+	ln -s -f $(CURDIR)/.zshrc $$HOME
 
-	ln -s -f .tmux $$HOME
-	ln -s -f .zsh-syntax-highlighting $$HOME
+	ln -s -f $(CURDIR)/.tmux $$HOME
+	ln -s -f $(CURDIR)/.zsh-syntax-highlighting $$HOME
 
-	ln -s -f .asdf $$HOME
-	ln -s -f .doom.d $$HOME
-	ln -s -f .emacs.d $$HOME
+	ln -s -f $(CURDIR)/.asdf $$HOME
+	ln -s -f $(CURDIR)/.doom.d $$HOME
+	ln -s -f $(CURDIR)/.emacs.d $$HOME
 
-	ln -s -f .local/share/nautilus-python $$HOME/.local/share
+	ln -s -f $(CURDIR)/.local/share/nautilus-python $$HOME/.local/share
 
-	ln -s -f .config/kitty $$HOME/.config
-	ln -s -f .config/nvim $$HOME/.config
-	ln -s -f .config/neofetch $$HOME/.config
+	ln -s -f $(CURDIR)/.config/kitty $$HOME/.config
+	ln -s -f $(CURDIR)/.config/nvim $$HOME/.config
+	ln -s -f $(CURDIR)/.config/neofetch $$HOME/.config
