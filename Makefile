@@ -17,3 +17,5 @@ all:
 	ln -s -f $(CURDIR)/.config/kitty $$HOME/.config
 	ln -s -f $(CURDIR)/.config/nvim $$HOME/.config
 	ln -s -f $(CURDIR)/.config/neofetch $$HOME/.config
+
+	sh -c "$$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
