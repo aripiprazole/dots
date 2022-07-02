@@ -3,17 +3,17 @@ set relativenumber
 set number
 set surround
 
-nnoremap DD "*dd  
-nnoremap D "*d  
-vnoremap D "*d  
-nnoremap d "_d  
-nnoremap dd "_dd  
-vnoremap d "_d  
-nnoremap s "_s  
-vnoremap s "_s  
-nnoremap c "_c  
-vnoremap c "_c  
-nnoremap x "_x  
-vnoremap x "_x  
+nnoremap DD "*dd
+nnoremap D "*d
+vnoremap D "*d
+nnoremap d "_d
+nnoremap dd "_dd
+vnoremap d "_d
+nnoremap s "_s
+vnoremap s "_s
+nnoremap c "_c
+vnoremap c "_c
+nnoremap x "_x
+vnoremap x "_x
 vnoremap p "_c<C-r>*<Esc>
 

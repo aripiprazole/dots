@@ -42,12 +42,3 @@ alias tmux="export TERM=\"screen-256color-bce\" && tmux"
 alias emacs="doom run"
 
 export PATH="$PATH:$HOME/.emacs.d/bin"
-
-# if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
-  # export TERM="screen-256color-bce"
-  # tmux attach -t default || tmux new -s default
-# fi
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
