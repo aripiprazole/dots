@@ -12,7 +12,7 @@ export LANG=en_US.UTF-8
 
 export TERM='xterm'
 
-export EDITOR='nvim'
+export EDITOR='vim'
 # ASDF completion configuration
 . $HOME/.asdf/asdf.sh
 
