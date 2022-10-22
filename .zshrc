@@ -42,3 +42,5 @@ alias tmux="export TERM=\"screen-256color-bce\" && tmux"
 alias emacs="doom run"
 
 export PATH="$PATH:$HOME/.emacs.d/bin"
+
+eval "$(starship init zsh)"
