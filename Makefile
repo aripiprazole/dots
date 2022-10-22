@@ -15,6 +15,7 @@ link:
 
 	ln -s -f $(CURDIR)/.config/kitty $$HOME/.config
 	ln -s -f $(CURDIR)/.config/nvim $$HOME/.config
+	ln -s -f $(CURDIR)/.config/powershell $$HOME/.config
 	ln -s -f $(CURDIR)/.config/neofetch $$HOME/.config
 
 all:
@@ -33,6 +34,7 @@ all:
 
 	ln -s -f $(CURDIR)/.config/kitty $$HOME/.config
 	ln -s -f $(CURDIR)/.config/nvim $$HOME/.config
+	ln -s -f $(CURDIR)/.config/powershell $$HOME/.config
 	ln -s -f $(CURDIR)/.config/neofetch $$HOME/.config
 
 	git clone https://github.com/asdf-vm/asdf.git $$HOME/.asdf --branch v0.10.0
