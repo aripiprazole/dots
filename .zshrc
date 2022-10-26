@@ -43,4 +43,6 @@ alias emacs="doom run"
 
 export PATH="$PATH:$HOME/.emacs.d/bin"
 
+alias rm="rm -i"
+
 eval "$(starship init zsh)"
