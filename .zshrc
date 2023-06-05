@@ -46,3 +46,10 @@ export PATH="$PATH:$HOME/.emacs.d/bin"
 alias rm="rm -i"
 
 eval "$(starship init zsh)"
+
+[ -f "/home/gabi/.ghcup/env" ] && source "/home/gabi/.ghcup/env" # ghcup-env
+
+alias idot="dot -Tsvg -Gmargin=0.2 '-Gbgcolor=#ffffff00' -Gcolor=white -Gfontcolor=white -Ncolor=white -Nfontcolor=white -Ecolor=white | rsvg-convert | kitty icat --align=left"
+
+source $HOME/.elan/env
+
